@@ -1,0 +1,120 @@
+@header-width: 50%;
+@font-color-white: #fff;
+@lower-header-text-color: #656565;
+@font-bold: "OpenSans-Bold";
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.main-header {
+    display: flex;
+    flex-direction: column;
+    height: 150px;
+}
+
+.main-header__upper-header {
+    display: flex;
+    height: 43px;
+    font-size: 13px;
+    color: @font-color-white;
+}
+
+.main-header__upper-header-list {
+    display: flex;
+    flex-direction: row;
+    padding: 12px 0px;
+    width: 50%;
+    margin-left: 429px;
+}
+
+.main-header__upper-header-language-item {
+    display: inline-block;
+    padding: 0 25px 0 10px;
+    position: relative;
+    
+}
+
+.main-header__upper-header-link {
+    font-weight: 700;
+    color: @font-color-white;
+    margin-left: 3px;
+}
+
+.main-header__upper-header-link_currency {
+    text-transform: uppercase;
+}
+
+.main-header__upper-header-language {
+    align-items: center;
+}
+
+.main-header__upper-header-language, .main-header__upper-header-menu {
+    width: @header-width;
+}
+
+.main-header__upper-header__show-menu {
+    width: 5px;
+    height: 5px;
+    border: 2px solid white;
+    border-top: none;
+    border-right: none;
+    transform: rotate(-45deg);
+    position: absolute;
+    top: 4px;
+    right: 13px;
+    
+}
+
+.main-header__upper-header-account {
+    padding: 12px 0;
+    margin-left: 142px;
+}
+
+.main-header__upper-header-account-item {
+    display: inline-block;
+    border-left: 1px solid white;
+    padding: 0 13px;
+    line-height: 0.9;
+}
+
+.main-header__upper-header-account-item:first-child {
+    border-left: none;
+}
+
+.main-header__upper-header-account-link {
+    color: @font-color-white;
+}
+
+.main-header__lower-header {
+    display: flex;
+    height: 107px;
+    color: @lower-header-text-color;
+}
+
+.main-header_part {
+    width: 33,3%;
+}
+
+.main-header__logo-text {
+    text-transform: uppercase;
+    font: 35px @font-bold;
+    margin-left: 439px;
+}
+
+.main-header__navigation-menu {
+    margin-left: 44px;
+}
+
+.main-header__navigation-item {
+    display: inline-block;
+    text-transform: uppercase;
+    padding: 42px 10px;
+}
+.main-header__navigation-link {
+    color: @lower-header-text-color;
+    font: 14px @font-bold;
+    text-decoration: none;
+}

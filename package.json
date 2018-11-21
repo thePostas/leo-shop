@@ -1,0 +1,26 @@
+{
+  "name": "leoshop",
+  "version": "1.0.0",
+  "description": "leo shop",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thePostas/leo-shop.git"
+  },
+  "author": "Postas",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/thePostas/leo-shop/issues"
+  },
+  "homepage": "https://github.com/thePostas/leo-shop#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-less": "^4.0.1"
+  },
+  "dependencies": {
+    "jquery": "^3.3.1"
+  }
+}
