@@ -26,7 +26,7 @@
      </section>
       <section class="main-header__lower-header">
        <div class="main-header__logo main-header_part">
-           <h1 class="main-header__logo-text">leo shop</h1>
+           <a class="main-header__logo-link" href="index.html"><h1 class="main-header__logo-text">leo shop</h1></a>
        </div>
         <nav class="main-header__navigation main-header_part">
             <ul class="main-header__navigation-menu">
@@ -37,7 +37,17 @@
                 <li class="main-header__navigation-item"><a class="main-header__navigation-link" href="#">Purchase</a></li>
             </ul>
         </nav>
-        <div class="main-header__search main-header_part"></div>
+        <div class="main-header__search main-header_part">
+            <form method="post" id="search" class="main-header__search-form">
+                <input type="search" class="main-header__search-form-input" placeholder="Search...">
+                <input type="image" src="img/search_image.png" class="main-header__search-form-button">
+            </form>
+        </div>
+        <div class="main-header__cart">
+            <a class="main-header__cart-link" href="#"><img src="img/discounts.png" class="main-header__cart-image main-header__cart_discounts" alt="discounts" width="20px" height="17px"></a>
+            <a class="main-header__cart-link" href="#" alt="cart"><img src="img/cart.png" class="main-header__cart-image main-header__cart_gocart" alt="cart" width="20px" height="17px"></a>
+            <a href="#" class="main-header__cart-alternative"><h4 class="main-header__cart-alternative-text">cart <b class="main-header__cart-counter">(0)</b></h4></a>
+        </div>
         </section>
     </header>
     <main class="main-content">

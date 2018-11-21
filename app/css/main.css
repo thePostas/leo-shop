@@ -73,13 +73,18 @@ ul {
   height: 107px;
   color: #656565;
 }
-.main-header_part {
-  width: 33,3%;
-}
 .main-header__logo-text {
   text-transform: uppercase;
   font: 35px "OpenSans-Bold";
   margin-left: 439px;
+  color: #656565;
+}
+.main-header__logo-link {
+  text-decoration: none;
+}
+.main-header__logo-link:visited,
+.main-header__logo-link:active {
+  color: #656565;
 }
 .main-header__navigation-menu {
   margin-left: 44px;
@@ -93,6 +98,57 @@ ul {
   color: #656565;
   font: 14px "OpenSans-Bold";
   text-decoration: none;
+}
+.main-header__search {
+  position: relative;
+}
+.main-header__search-form-input {
+  height: 29px;
+  width: 174px;
+  margin: 39px 0 0 102px;
+  padding: 0 8px;
+}
+.main-header__search-form-input:focus {
+  outline: none;
+}
+.main-header__search-form-button {
+  position: absolute;
+  top: 46px;
+  right: 8px;
+}
+.main-header__cart {
+  display: flex;
+}
+.main-header__cart-link {
+  position: relative;
+  width: 35px;
+  height: 35px;
+  background-color: #7db122;
+  border-radius: 50%;
+  margin: 36px -10px 0px 14px;
+}
+.main-header__cart-image {
+  position: absolute;
+}
+.main-header__cart_discounts {
+  top: 9px;
+  left: 8px;
+}
+.main-header__cart_gocart {
+  top: 9px;
+  left: 7px;
+}
+.main-header__cart-alternative {
+  color: #656565;
+  text-transform: uppercase;
+  text-decoration: none;
+  font: 14px "OpenSans-Bold";
+}
+.main-header__cart-alternative {
+  margin: 25px 0 0 23px;
+}
+.main-header__cart-counter {
+  margin-left: 2px;
 }
 @font-face {
   font-family: 'OpenSans-Regular';
