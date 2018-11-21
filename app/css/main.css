@@ -78,6 +78,7 @@ ul {
 }
 .main-header__upper-header-account-link {
   color: #fff;
+  text-decoration: none;
 }
 .main-header__lower-header {
   display: flex;
@@ -239,8 +240,8 @@ ul {
 .catalog__goods {
   position: relative;
   padding-top: 30px;
-  width: 757px;
-  background-color: lightblue;
+  width: 785px;
+  flex-wrap: wrap;
 }
 .catalog__title {
   text-transform: uppercase;
@@ -249,13 +250,12 @@ ul {
 }
 .catalog__title_absolute {
   position: absolute;
-  top: -30px;
-  left: -6px;
+  top: -40px;
+  left: -7px;
 }
 .catalog__wrapper {
   display: flex;
   flex-direction: column;
-  margin-left: 28px;
 }
 .catalog__featured {
   width: 233px;
@@ -267,6 +267,66 @@ ul {
   width: 233px;
   height: 282px;
   background-color: green;
+}
+.catalog__goods {
+  display: flex;
+  margin-top: 10px;
+}
+.catalog__goods-item {
+  position: relative;
+  display: block;
+  width: 217px;
+  height: 302px;
+  box-shadow: 0 0 15px 0 lightgrey;
+  padding: 8px;
+  margin-right: 28px;
+  margin-bottom: 27px;
+}
+.catalog__goods-item-image {
+  width: 217px;
+  height: 228px;
+}
+.catalog__goods-item-image_1 {
+  background: url("../img/good_1.jpg") no-repeat;
+}
+.catalog__goods-item-image_2 {
+  background: url("../img/good_2.jpg") no-repeat;
+}
+.catalog__goods-item-name {
+  padding: 0;
+  margin: 11px 0 0 4px;
+  font: 14px "OpenSans-Regular";
+}
+.catalog__goods-item-price {
+  padding: 0;
+  margin: -1px 0px 0 4px;
+  color: #7db122;
+  font: 18px "OpenSans-Regular";
+}
+.catalog__goods-item-tocart {
+  position: absolute;
+  cursor: pointer;
+  background-color: #7db122;
+  background-image: url("../img/tocart.png");
+  background-repeat: no-repeat;
+  background-position: 10px 11px;
+  width: 47px;
+  height: 47px;
+  border-radius: 50%;
+  bottom: 25px;
+  right: 13px;
+}
+.catalog__goods-item-new {
+  display: none;
+  position: absolute;
+  width: 97px;
+  height: 94px;
+  background: url("../img/new.png") no-repeat;
+  top: -4px;
+  right: -3px;
+}
+.true {
+  display: block;
 }
 @font-face {
   font-family: 'OpenSans-Regular';
