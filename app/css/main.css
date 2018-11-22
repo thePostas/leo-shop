@@ -447,7 +447,9 @@ ul {
   background-color: #7db122;
   margin: 3px;
 }
-.catalog__featured-radio_1:checked ~ catalog__featured-label_1 {
+.catalog__featured-radio_1:checked ~ .catalog__featured-label_1,
+.catalog__featured-radio_2:checked ~ .catalog__featured-label_2,
+.catalog__featured-radio_3:checked ~ .catalog__featured-label_3 {
   background-color: #4cb1ca;
 }
 @font-face {
