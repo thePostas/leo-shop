@@ -248,7 +248,7 @@ ul {
 }
 .catalog__title {
   text-transform: uppercase;
-  font: 24px "OpenSans-Regular";
+  font-size: 24px;
   color: #635f57;
 }
 .catalog__title_absolute {
@@ -263,11 +263,6 @@ ul {
 .catalog__wrapper-second {
   display: flex;
   flex-direction: column;
-}
-.catalog__newsletters {
-  width: 233px;
-  height: 282px;
-  background-color: green;
 }
 .catalog__goods {
   display: flex;
@@ -284,6 +279,7 @@ ul {
   margin-bottom: 27px;
 }
 .catalog__item-image {
+  background-color: #eff1f0 !important;
   width: 217px;
   height: 228px;
 }
@@ -312,10 +308,10 @@ ul {
   background: url("../img/good_8.jpg") no-repeat;
 }
 .catalog__goods-item-image_9 {
-  background: url("../img/good_9.jpg") no-repeat;
+  background: url("../img/good_9.jpg") no-repeat -17px -4px;
 }
 .catalog__staff-pick-item-image_1 {
-  background: url("../img/good_9.jpg") no-repeat -5px -7px;
+  background: url("../img/good_9.jpg") no-repeat -23px -11px;
 }
 .catalog__staff-pick-item-image_2 {
   background: url("../img/good_5.jpg") no-repeat -7px -7px;
@@ -330,18 +326,18 @@ ul {
   background: url("../img/good_3.jpg") no-repeat -4px -12px;
 }
 .catalog__new-products-item-image_3 {
-  background: url("../img/good_4.jpg") no-repeat -3px -8px;
+  background: url("../img/good_4.jpg") no-repeat -1px -10px;
 }
 .catalog__item-name {
   padding: 0;
   margin: 11px 0 0 4px;
-  font: 14px "OpenSans-Regular";
+  font-size: 14px;
 }
 .catalog__item-price {
   padding: 0;
   margin: -1px 0px 0 4px;
   color: #7db122;
-  font: 18px "OpenSans-Regular";
+  font-size: 18px;
 }
 .catalog__item-tocart {
   position: absolute;
@@ -401,11 +397,13 @@ ul {
   box-shadow: 0 0 5px 0 lightgrey;
   background-clip: content-box;
 }
+.catalog__title {
+  text-align: center;
+  line-height: 1.33;
+}
 .featured__title {
   width: 115px;
-  text-align: center;
   margin: 16px 0 0 57px;
-  line-height: 1.33;
 }
 .featured__bg {
   position: relative;
@@ -426,7 +424,7 @@ ul {
   background-color: #4cb1ca;
   bottom: 29px;
   left: 51px;
-  font: 14px "OpenSans-Regular";
+  font-size: 14px;
   color: #fff;
   text-decoration: none;
   box-sizing: border-box;
@@ -451,6 +449,120 @@ ul {
 .catalog__featured-radio_2:checked ~ .catalog__featured-label_2,
 .catalog__featured-radio_3:checked ~ .catalog__featured-label_3 {
   background-color: #4cb1ca;
+}
+.catalog__newsletters {
+  border-top: 4px solid #4cb1ca;
+  width: 233px;
+  height: 282px;
+  font-size: 14px;
+  box-shadow: 0 5px 20px -8px lightgrey;
+}
+.catalog__newsletters-title {
+  margin: 19px 3px 0px -1px;
+}
+.catalog__newsletters-text {
+  position: relative;
+  text-align: center;
+  margin: 11px 0px 0px 2px;
+}
+.catalog__newsletters-text:after {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 100px;
+  height: 1px;
+  background-color: #ededed;
+  bottom: -12px;
+  left: 61px;
+}
+.catalog__newsletters-form-input {
+  border: 1px solid #e2e2e2;
+  width: 182px;
+  height: 25px;
+  margin: 26px 0px 0px 24px;
+}
+.catalog__newsletters-form {
+  position: relative;
+  height: 135px;
+}
+.catalog__newsletters-form-input:focus {
+  outline: none;
+}
+.catalog__newsletters-form-button {
+  position: absolute;
+  display: block;
+  width: 112px;
+  height: 44px;
+  background-color: #7eb123;
+  bottom: 18px;
+  left: 61px;
+  color: #fff;
+  text-decoration: none;
+  text-align: center;
+  box-sizing: border-box;
+  padding-top: 12px;
+}
+.footer {
+  font-size: 13px;
+  color: #fff;
+  margin-top: 49px;
+}
+.footer__important,
+.footer__title {
+  text-transform: uppercase;
+  font-size: 21px;
+  font-weight: 100;
+}
+.footer__contacts {
+  display: flex;
+  height: 105px;
+  background-color: #4cb1ca;
+}
+.footer__contacts-left-side {
+  padding-left: 272px;
+}
+.footer__contacts-right-side {
+  padding-left: 127px;
+}
+.footer__contacts-part {
+  position: relative;
+  width: 50%;
+  box-sizing: border-box;
+  vertical-align: middle;
+  padding-top: 21px;
+}
+.footer__contacts-icon {
+  position: absolute;
+  width: 65px;
+  height: 65px;
+  border-radius: 50%;
+  background-color: #fff;
+  top: 21px;
+}
+.footer__contacts-icon-shipping {
+  left: 188px;
+}
+.footer__contacts-icon-phone {
+  left: 43px;
+}
+.footer__middle {
+  display: flex;
+  padding: 26px 187px 0 187px;
+  height: 336px;
+  background-color: #39a0b9;
+  box-sizing: border-box;
+}
+.footer__title {
+  font-size: 20px;
+}
+.footer__middle-part {
+  box-sizing: border-box;
+  display: flex;
+  width: 25%;
+}
+.footer__bottom {
+  height: 62px;
+  background-color: #0b4b5a;
 }
 @font-face {
   font-family: 'OpenSans-Regular';

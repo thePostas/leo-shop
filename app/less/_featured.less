@@ -1,8 +1,9 @@
 @featured-color: #4cb1ca;
+@border-feature: 4px solid @featured-color;
 
 .catalog__featured {
     position: relative;
-    border-top: 4px solid @featured-color;
+    border-top: @border-feature;
     width: 233px;
     height: 484px;
     margin-bottom: 30px;
@@ -11,11 +12,14 @@
     background-clip: content-box;
 }
 
+.catalog__title {
+    text-align: center;
+    line-height: 1.33;
+}
+
 .featured__title {
     width: 115px;
-    text-align: center;
     margin: 16px 0 0 57px;
-    line-height: 1.33;
 }
 
 .featured__bg {
@@ -38,7 +42,7 @@
     background-color: @featured-color;
     bottom: 29px;
     left: 51px;
-    font: 14px "OpenSans-Regular";
+    font-size: 14px;
     color: #fff;
     text-decoration: none;
     box-sizing: border-box;
@@ -65,4 +69,64 @@
 
 .catalog__featured-radio_1:checked ~ .catalog__featured-label_1, .catalog__featured-radio_2:checked ~ .catalog__featured-label_2, .catalog__featured-radio_3:checked ~ .catalog__featured-label_3  {
     background-color: @featured-color;
+}
+
+.catalog__newsletters {
+    border-top: @border-feature;
+    width: 233px;
+    height: 282px;
+    font-size: 14px;
+    box-shadow: 0 5px 20px -8px lightgrey;
+}
+
+.catalog__newsletters-title {
+    margin: 19px 3px 0px -1px;
+}
+
+.catalog__newsletters-text {
+    position: relative;
+    text-align: center;
+    margin: 11px 0px 0px 2px;
+}
+
+.catalog__newsletters-text:after {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 100px;
+    height: 1px;
+    background-color: #ededed;
+    bottom: -12px;
+    left: 61px;
+}
+
+.catalog__newsletters-form-input {
+    border: 1px solid #e2e2e2;
+    width: 182px;
+    height: 25px;
+    margin: 26px 0px 0px 24px;
+}
+
+.catalog__newsletters-form {
+    position: relative;
+    height: 135px;
+}
+
+.catalog__newsletters-form-input:focus {
+    outline: none;
+}
+
+.catalog__newsletters-form-button {
+    position: absolute;
+    display: block;    
+    width: 112px;
+    height: 44px;
+    background-color: #7eb123;
+    bottom: 18px;
+    left: 61px;
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+    box-sizing: border-box;
+    padding-top: 12px;
 }
