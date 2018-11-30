@@ -709,8 +709,36 @@ ul {
   background: url(../img/socials_facebook.png) no-repeat 0 0;
 }
 .footer__bottom {
+  display: flex;
   height: 62px;
   background-color: #0b4b5a;
+}
+.footer__bottom-part {
+  width: 50%;
+}
+.footer__bottom-copyrigth-text {
+  margin: 0;
+  line-height: 4.6;
+  text-align: center;
+  margin-left: -15px;
+}
+.footer__bottom,
+.footer__bottom-link,
+.footer__bottom-link:visited {
+  color: #8adcf0;
+  text-decoration: none;
+}
+.footer__bottom-list {
+  display: flex;
+  margin-top: 23px;
+  margin-left: 50px;
+}
+.footer__bottom-item {
+  line-height: 1;
+  padding: 0px 15px;
+}
+.footer__bottom-item:not(.footer__bottom-item_first) {
+  border-left: 1px solid #0b4b5a;
 }
 @font-face {
   font-family: 'OpenSans-Regular';
