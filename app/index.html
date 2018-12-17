@@ -198,6 +198,9 @@
                 <div class="catalog__featured">
                     <h2 class="catalog__title featured__title">featured glass</h2>
                     <div class="featured__bg">
+                       <div class="featured__bg-wrapper">
+                           <img class="featured__bg_image" src="img/featured_bg.png" width="241px" height="453px">
+                        </div>
                         <a href="#" class="catalog__featured-checkout">Check it Out</a>
                     </div>
                     <div class="catalog__featured-slider-mini">
@@ -300,5 +303,31 @@
         </div>
     </footer>
     </div>
+    <script>
+        var pictures = [
+        'img/featured_bg.png',
+        'img/featured_bg_1.png',
+        'img/featured_bg_2.png'
+        ];
+        var titles = [
+            'featured glass',
+            'second page',
+            'third page'
+        ];
+        var full = document.querySelector('.featured__bg_image');
+        var title = document.querySelector('.featured__title');
+        var preview = document.querySelectorAll('.catalog__featured-radio');
+
+        var addThumbnailClickHandler = function (preview, photo, titles) {
+          preview.addEventListener('click', function () {
+            full.src = photo;
+            title.textContent = titles;
+          });
+        };
+
+        for (var i = 0; i < preview.length; i++) {
+        addThumbnailClickHandler(preview[i], pictures[i], titles[i]);
+}
+    </script>
 </body>
 </html>

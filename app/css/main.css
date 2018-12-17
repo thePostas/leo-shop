@@ -410,10 +410,19 @@ ul {
   width: 233px;
   height: 362px;
   padding: 12px 12px 14px 12px;
-  background: url(../img/featured_bg.png) -4px -56px;
   box-shadow: 0 5px 20px -8px lightgrey;
   background-clip: content-box;
   box-sizing: border-box;
+}
+.featured__bg-wrapper {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.featured__bg_image {
+  position: relative;
+  top: -68px;
+  left: -16px;
 }
 .catalog__featured-checkout {
   position: absolute;
