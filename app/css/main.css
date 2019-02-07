@@ -253,10 +253,11 @@ ul {
 }
 .catalog__title_absolute {
   position: absolute;
-  top: -40px;
-  left: -6px;
+  top: -25px;
+  left: 0px;
 }
-.catalog__wrapper first {
+.catalog__wrapper-first {
+  position: relative;
   display: flex;
   flex-direction: column;
 }
@@ -601,6 +602,11 @@ ul {
   height: 50px;
   margin: 0 11px 8px 0;
 }
+.footer-middle-facebook-photos-link {
+  display: block;
+  width: 50px;
+  height: 50px;
+}
 .footer-middle-facebook-photos-link_1 {
   background: url("../img/facebook_1.jpg") no-repeat;
 }
@@ -742,12 +748,12 @@ ul {
   margin-top: 23px;
   margin-left: 50px;
 }
-.footer__bottom-item {
+.footer__bottom-link {
   line-height: 1;
   padding: 0px 15px;
 }
 .footer__bottom-item:not(.footer__bottom-item_first) {
-  border-left: 1px solid #0b4b5a;
+  border-left: 1px solid #39a0b9;
 }
 @font-face {
   font-family: 'OpenSans-Regular';
