@@ -63,8 +63,9 @@
             -->
        </section>
         <section class="catalog">
-           <div class="catalog__wrapper-first">
-               <h2 class="catalog__title catalog__title_absolute">featured products</h2>
+           <div class="catalog__wrapper">
+               <div class="catalog__featured-products">
+               <h2 class="catalog__title catalog__title_absolute catalog__title-featured">featured products</h2>
                 <ul class="catalog__section catalog__goods">
                     <li class="catalog__item">
                         <div class="catalog__item-image catalog__goods-item-image_1"></div>
@@ -139,8 +140,10 @@
                         <span class="catalog__item-sale"></span>
                     </li>
                 </ul>
-                <ul class="catalog__section catalog__staff-pick">
-                        <h2 class="catalog__title catalog__title_absolute">staff pick</h2>
+               </div>
+                <div class="catalog__staff-pick">
+                    <h2 class="catalog__title catalog__title_absolute catalog__title-staff">staff pick</h2>
+                <ul class="catalog__section">
                         <li class="catalog__item">
                         <div class="catalog__item-image catalog__staff-pick-item-image_1"></div>
                         <p class="catalog__item-name">Lorem Ipsum is simply.</p>
@@ -166,8 +169,10 @@
                         <span class="catalog__item-sale"></span>
                     </li>
                 </ul>
+                </div>
+               <div class="catalog__newproducts">
+                   <h2 class="catalog__title catalog__title_absolute catalog__title-new">new products</h2>
                 <ul class="catalog__section catalog__new-products">
-                        <h2 class="catalog__title catalog__title_absolute">new products</h2>
                         <li class="catalog__item">
                         <div class="catalog__item-image catalog__new-products-item-image_1"></div>
                         <p class="catalog__item-name">Sed tempus tellus.</p>
@@ -192,7 +197,8 @@
                         <span class="catalog__item-new true"></span>
                         <span class="catalog__item-sale"></span>
                     </li>
-                </ul>      
+                </ul>
+               </div>
             </div>        
             <div class="catalog__wrapper-second">
                 <div class="catalog__featured">

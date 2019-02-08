@@ -6,6 +6,10 @@
     width: 1019px;
 }
 
+.catalog__featured-products, .catalog__staff-pick, .catalog__newproducts {
+    position: relative;
+}
+
 .catalog__section {
     display: flex;
 }
@@ -25,14 +29,27 @@
 
 .catalog__title_absolute {
     position: absolute;
-    top: -25px;
-    left: 0px;
 }
 
-.catalog__wrapper-first {
+.catalog__title-featured {
+    top: -28px;
+    left: -6px;
+}
+
+.catalog__title-staff {
+    top: -38px;
+    left: -5px;
+}
+
+.catalog__title-new {
+    top: 9px;
+    left: -6px;
+}
+
+.catalog__wrapper {
     position: relative;
     display: flex;
-    flex-direction: column;
+
 }
 
 .catalog__wrapper-second {
